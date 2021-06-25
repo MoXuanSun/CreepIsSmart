@@ -46,9 +46,9 @@ let SCVcontroler = {
                 }
             }
             else {
-                if (creep.transfer(Game.getObjectById('24b307748aeaa42'),RESOURCE_ENERGY)
+                if (creep.transfer(creep.room.controller,RESOURCE_ENERGY)
                 === ERR_NOT_IN_RANGE){
-                    creep.moveTo(Game.getObjectById('24b307748aeaa42'),
+                    creep.moveTo(creep.room.controller,
                         {visualizePathStyle: {stroke: '#9999FF'}})
                 }
             }
